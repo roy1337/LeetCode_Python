@@ -28,7 +28,8 @@ class Solution:
         for _ in range(count - (k%count) -1):
             curr = curr.next
 
-        #Our new head 
+        #Our new head
+        #for K = 2, curr.next >> 4 so we're making it our head (result), and making the >> to None 
         result = curr.next
         curr.next = None
         
